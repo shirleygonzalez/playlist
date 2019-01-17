@@ -10,18 +10,27 @@ var images = ["https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&
 "https://upload.wikimedia.org/wikipedia/en/thumb/0/0d/Ciara_-_Level_Up_single_cover.png/220px-Ciara_-_Level_Up_single_cover.png",
 "https://i.ytimg.com/vi/IoOli-fR_cs/maxresdefault.jpg",
 "https://images-na.ssl-images-amazon.com/images/I/61HOSMRwkhL._SS500.jpg"];
+var artists = ["Jhene Aiko","Jaden Smith","MC Joao","Ciara","Mana"];
+var songLengths=["179","202","187","211","273"];
+var songLinks =["https://youtu.be/4XlxoQoiYYg","https://youtu.be/cmc8q2dcIMs","https://youtu.be/kzOkza_u3Z8","https://youtu.be/Dh-ULbQmmF8","https://youtu.be/IoOli-fR_cs","https://youtu.be/DcnNeGQHwDc"];
 
 
+    
+// BELOW Use forEach Loop to display the data from each of your array's in the correct di
 
-    // BELOW Use forEach Loop to display the data from each of your array's in the correct div
-
+songs.forEach(function(song){
+    $("body").append(song);
 }
+    
 
 function emptySongInfo(){
     $("#songs").empty();
+    $("#images").empty();
+    $("#artists").empty();
+    $("#lengths").empty();
+    $("#link").empty();
+    
     // Use jQuery to empty all of the remaining divs
-
-
 }
 
 
